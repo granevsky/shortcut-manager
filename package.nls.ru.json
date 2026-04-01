@@ -1,0 +1,21 @@
+{
+  "extension.description": "Создание ярлыков на рабочем столе для текущего рабочего пространства с возможностью добавления быстрых действий.",
+  "extension.displayName": "Настройщик Ярлыков",
+  "command.generateShortcut.title": "Настройщик Ярлыков: Создать Ярлык",
+  "msg.requiresTrustedWorkspace": "Конфигуратор Ярлыков требует доверенное рабочее пространство.",
+  "msg.selectScriptsPlaceholder": "Выберите скрипты для добавления в качестве Быстрых Действий к ярлыку",
+  "msg.shortcutGeneratedSuccess": "Ярлык для рабочего пространства успешно создан!",
+  "msg.shortcutGeneratedFailed": "Не удалось создать ярлык: {0}",
+  "msg.noWorkspaceFolder": "Рабочее пространство не открыто.",
+  "msg.failedToParsePackageJson": "Не удалось разобрать package.json:",
+  "msg.openInVsCode": "Открыть {0} в VS Code",
+  "msg.runScript": "{0} - Запустить скрипт {1}",
+  "msg.runScriptFileName": "Запустить {0}",
+  "msg.runScriptLinux": "Запустить {0}",
+  "msg.vsCodeWorkspaceShortcut": "Ярлык рабочего пространства VS Code",
+  "config.language.description": "Язык расширения. 'auto' использует язык интерфейса VS Code. Для полного обновления меню и команд может потребоваться перезапуск.",
+  "config.language.enum.auto": "Авто (язык интерфейса VS Code)",
+  "config.language.enum.en": "Английский",
+  "config.language.enum.ru": "Русский",
+  "config.packageManager.description": "Переопределяет пакетный менеджер для Быстрых команд. Если стоит 'auto', расширение найдет файл блокировки (yarn.lock, pnpm-lock.yaml, bun.lockb) в папке со скриптом."
+}
