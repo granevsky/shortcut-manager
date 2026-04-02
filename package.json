@@ -1,17 +1,17 @@
 {
-  "name": "shortcut-configurator",
+  "name": "shortcut-manager",
   "displayName": "%extension.displayName%",
   "description": "%extension.description%",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publisher": "Granevsky",
   "license": "MIT",
-  "icon": "images/icon.png",
+  "icon": "assets/icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/granevsky/shortcut-configurator"
+    "url": "https://github.com/granevsky/shortcut-manager"
   },
   "bugs": {
-    "url": "https://github.com/granevsky/shortcut-configurator/issues"
+    "url": "https://github.com/granevsky/shortcut-manager/issues"
   },
   "engines": {
     "vscode": "^1.80.0",
@@ -37,14 +37,14 @@
   "contributes": {
     "commands": [
       {
-        "command": "shortcut-configurator.generateShortcut",
+        "command": "shortcut-manager.generateShortcut",
         "title": "%command.generateShortcut.title%"
       }
     ],
     "configuration": {
-      "title": "Shortcut Configurator",
+      "title": "Shortcut Manager",
       "properties": {
-        "shortcut-configurator.language": {
+        "shortcut-manager.language": {
           "type": "string",
           "enum": [
             "auto",
@@ -59,7 +59,7 @@
           "default": "auto",
           "description": "%config.language.description%"
         },
-        "shortcut-configurator.packageManager": {
+        "shortcut-manager.packageManager": {
           "type": "string",
           "enum": [
             "auto",
