@@ -1,6 +1,6 @@
-# Shortcut Configurator
+# Shortcut Manager
 
-[![Version](https://vsmarketplacebadge.apphb.com/version.svg)](#) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 *Read this in other languages: [English](#-english), [Русский](#-русский).*
 
@@ -9,7 +9,7 @@
 ## 🇺🇸 English
 
 ### Overview
-**Shortcut Configurator** is a powerful Visual Studio Code extension that generates true OS-level native desktop shortcuts directly to your VS Code workspaces. It eliminates the need to manually search for your projects, and seamlessly integrates your configured NPM/Yarn/PNPM/Bun scripts directly into the shortcut application!
+**Shortcut Manager** is a powerful Visual Studio Code extension that generates true OS-level native desktop shortcuts directly to your VS Code workspaces. It eliminates the need to manually search for your projects, and seamlessly integrates your configured NPM/Yarn/PNPM/Bun scripts directly into the shortcut application!
 
 ### Key Features
 - **Cross-Platform**: Automatically generates native architecture shortcuts (`.lnk` for Windows, `.app` Launchpad-ready Apple Bundles for macOS, and `.desktop` files for Linux).
@@ -20,7 +20,7 @@
 
 ### How to Use
 1. Open your trusted project workspace.
-2. Press `Ctrl+Shift+P` (or `Cmd+Shift+P`) and type **"Shortcut Configurator: Generate Shortcut"**.
+2. Press `Ctrl+Shift+P` (or `Cmd+Shift+P`) and type **"Shortcut Manager: Generate Shortcut"**.
 3. Select which background scripts (e.g., `frontend : build`, `backend : start`) to include as OS-level **Quick Actions**.
 4. A custom application shortcut is immediately placed into your OS's Start Menu / Applications folder!
 
@@ -43,15 +43,15 @@ If no matching icon is found, a default VS Code-style icon is automatically appl
 
 ### Requirements & Settings
 - Visual Studio Code version `1.80.0` or higher.
-- `shortcut-configurator.packageManager`: Override auto-detection (`auto`, `npm`, `yarn`, `pnpm`, `bun`).
-- `shortcut-configurator.language`: Override extension language (`auto`, `en`, `ru`).
+- `shortcut-manager.packageManager`: Override auto-detection (`auto`, `npm`, `yarn`, `pnpm`, `bun`).
+- `shortcut-manager.language`: Override extension language (`auto`, `en`, `ru`).
 
 ---
 
 ## 🇷🇺 Русский
 
 ### Обзор
-**Shortcut Configurator** — это мощное расширение для Visual Studio Code, которое генерирует настоящие системные ярлыки прямо для ваших рабочих областей. Оно избавляет от необходимости постоянно искать нужный проект в файловой системе, а также позволяет встроить скрипты запуска напрямую в ярлык приложения для ОС!
+**Shortcut Manager** — это мощное расширение для Visual Studio Code, которое генерирует настоящие системные ярлыки прямо для ваших рабочих областей. Оно избавляет от необходимости постоянно искать нужный проект в файловой системе, а также позволяет встроить скрипты запуска напрямую в ярлык приложения для ОС!
 
 ### Главные Фишки
 - **Кроссплатформенность**: Автоматически создает системные ярлыки (`.lnk` для Windows, полноформатные Launchpad `.app` апплеты для macOS, и `.desktop` файлы для Linux).
@@ -62,7 +62,7 @@ If no matching icon is found, a default VS Code-style icon is automatically appl
 
 ### Как Использовать
 1. Откройте нужную доверенную папку проекта.
-2. Откройте палитру команд (`Ctrl+Shift+P` или `Cmd+Shift+P`) и введите **"Shortcut Configurator: Generate Shortcut"**.
+2. Откройте палитру команд (`Ctrl+Shift+P` или `Cmd+Shift+P`) и введите **"Shortcut Manager: Generate Shortcut"**.
 3. Отметьте галочками скрипты (например, `frontend : build`, `backend : start`), которые хотите вынести в качестве Быстрых Действий (Quick Actions) в ярлыке ОС.
 4. Кастомный ярлык мгновенно появится в вашем меню Пуск / папке Программ!
 
@@ -85,5 +85,5 @@ If no matching icon is found, a default VS Code-style icon is automatically appl
 
 ### Требования и Настройки
 - Visual Studio Code версии `1.80.0` или старше.
-- `shortcut-configurator.packageManager`: Переопределение умного авто-определения (`auto`, `npm`, `yarn`, `pnpm`, `bun`).
-- `shortcut-configurator.language`: Смена языка интерфейса расширения (`auto`, `en`, `ru`).
+- `shortcut-manager.packageManager`: Переопределение умного авто-определения (`auto`, `npm`, `yarn`, `pnpm`, `bun`).
+- `shortcut-manager.language`: Смена языка интерфейса расширения (`auto`, `en`, `ru`).

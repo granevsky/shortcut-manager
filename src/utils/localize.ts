@@ -1,4 +1,4 @@
-import * as vscode from 'vscode';
+﻿import * as vscode from 'vscode';
 import * as fs from 'fs';
 import * as path from 'path';
 
@@ -6,7 +6,7 @@ let nlsData: Record<string, string> = {};
 
 export function initLocalization(extensionPath: string) {
     try {
-        const configLang = vscode.workspace.getConfiguration('shortcut-configurator').get<string>('language');
+        const configLang = vscode.workspace.getConfiguration('shortcut-manager').get<string>('language');
         let lang = configLang !== 'auto' ? configLang : vscode.env.language;
         
         // Load default English first
@@ -40,3 +40,4 @@ export function localize(key: string, ...args: string[]): string {
 
     return result;
 }
+

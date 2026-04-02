@@ -1,12 +1,16 @@
 # Changelog
 
-All notable changes to the **Shortcut Configurator** extension will be documented in this file.
+All notable changes to the **Shortcut Manager** extension will be documented in this file.
 
 *Read this in other languages: [English](#-english), [Русский](#-русский).*
 
 ---
 
 ## 🇺🇸 English
+
+### [1.0.4] - 2026-04-02
+#### Changed
+- **Project Renamed**: The extension was officially renamed to **Shortcut Manager** (formerly Shortcut Configurator) due to Marketplace naming availability. All configuration keys, commands, and internal references have been fully migrated.
 
 ### [1.0.3] - 2026-04-01
 #### Added
@@ -22,11 +26,11 @@ All notable changes to the **Shortcut Configurator** extension will be documente
 - **Nested Sub-Project Discovery**: The extension now recursively searches the workspace for multiple `package.json` files (excluding `node_modules`), properly identifying and routing scripts based on their relative CWD.
 - **macOS Quick Action Apps**: `MacGenerator` now generates canonical `.app` Apple Bundles for each Quick Action, utilizing `osascript` to hook gracefully into macOS `Terminal.app`.
 - **Advanced Linux Terminal Wrapper**: `.desktop` execution now natively scans and utilizes the user's favored terminal emulator (e.g. `gnome-terminal`, `xterm`, `konsole`, `terminator`) without silently executing background commands.
-- Configuration option `shortcut-configurator.packageManager` added to allow users to force a specific package manager to be injected.
+- Configuration option `shortcut-manager.packageManager` added to allow users to force a specific package manager to be injected.
 
 ### [1.0.0] - 2026-03-23
 #### Added
-- Core command `Shortcut Configurator: Generate Shortcut` implemented.
+- Core command `Shortcut Manager: Generate Shortcut` implemented.
 - Automatic creation of `.lnk`, `.app`, and `.desktop` native files.
 - Basic Quick Actions binding mapped via Workspace prompt.
 - Full localization (English/Russian).
@@ -35,6 +39,10 @@ All notable changes to the **Shortcut Configurator** extension will be documente
 ---
 
 ## 🇷🇺 Русский
+
+### [1.0.4] - 2026-04-02
+#### Изменено
+- **Переименование Проекта**: Расширение официально переименовано в **Shortcut Manager** (ранее Shortcut Configurator) из-за правил публикации в Маркетплейсе. Все конфигурации, команды палитры и внутренние ссылки успешно мигрированы на новое название.
 
 ### [1.0.3] - 2026-04-01
 #### Добавлено
@@ -50,11 +58,12 @@ All notable changes to the **Shortcut Configurator** extension will be documente
 - **Поддержка Мульти-проектов**: Расширение рекурсивно находит вложенные файлы `package.json` (исключая `node_modules`) и грамотно привязывает пути (CWD) к каждому скрипту, помечая их понятными префиксами в меню при генерации.
 - **Сборка Быстрых Команд на macOS**: Генератор для Mac (Apple) теперь создает отдельные независимые `.app` сборки для каждой быстрой команды, которые запускают скрипты через классический системный `Terminal.app` с помощью механизмов `osascript`.
 - **Продвинутый оборачиватель Терминалов для Linux**: На Linux расширение теперь нативно ищет установленный в системе терминал (такие как `gnome-terminal`, `xterm`, `konsole`, `terminator`) и выводит выполнение скриптов в визуальное окно, вместо мертвого "фонового" исполнения.
-- Новая настройка `shortcut-configurator.packageManager` для ручного переопределения используемого пакетного менеджера.
+- Новая настройка `shortcut-manager.packageManager` для ручного переопределения используемого пакетного менеджера.
 
 ### [1.0.0] - 2026-03-23
 #### Добавлено
-- Реализована базовая команда создания нативного ярлыка: `Shortcut Configurator: Generate Shortcut`.
+- Реализована базовая команда создания нативного ярлыка: `Shortcut Manager: Generate Shortcut`.
 - Полноценная генерация удобных форматов `.lnk`, `.app` и `.desktop`.
 - Поддержка чтения скриптов из базового `package.json`.
 - Двуязычная локализация и архитектурная защита от Command Injection уязвимостей.
+

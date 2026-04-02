@@ -1,8 +1,8 @@
 {
   "extension.description": "Создание ярлыков на рабочем столе для текущего рабочего пространства с возможностью добавления быстрых действий.",
-  "extension.displayName": "Настройщик Ярлыков",
-  "command.generateShortcut.title": "Настройщик Ярлыков: Создать Ярлык",
-  "msg.requiresTrustedWorkspace": "Конфигуратор Ярлыков требует доверенное рабочее пространство.",
+  "extension.displayName": "Менеджер Ярлыков",
+  "command.generateShortcut.title": "Менеджер Ярлыков: Создать Ярлык",
+  "msg.requiresTrustedWorkspace": "Менеджер Ярлыков требует доверенное рабочее пространство.",
   "msg.selectScriptsPlaceholder": "Выберите скрипты для добавления в качестве Быстрых Действий к ярлыку",
   "msg.shortcutGeneratedSuccess": "Ярлык для рабочего пространства успешно создан!",
   "msg.shortcutGeneratedFailed": "Не удалось создать ярлык: {0}",

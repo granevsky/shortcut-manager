@@ -1,4 +1,4 @@
-import * as vscode from 'vscode';
+﻿import * as vscode from 'vscode';
 import * as fs from 'fs';
 import * as path from 'path';
 import { localize } from './localize';
@@ -56,7 +56,7 @@ export async function parseAllPackageJsonScripts(workspacePath: string): Promise
 }
 
 export function detectPackageManager(cwd: string): string {
-    const config = vscode.workspace.getConfiguration('shortcut-configurator');
+    const config = vscode.workspace.getConfiguration('shortcut-manager');
     const override = config.get<string>('packageManager');
 
     if (override && override !== 'auto') {
@@ -76,3 +76,4 @@ export function detectPackageManager(cwd: string): string {
     // Default fallback
     return 'npm';
 }
+

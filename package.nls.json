@@ -1,8 +1,8 @@
 {
   "extension.description": "Create OS-level desktop shortcuts for the current workspace with Quick Actions.",
-  "extension.displayName": "Shortcut Configurator",
-  "command.generateShortcut.title": "Shortcut Configurator: Generate Shortcut",
-  "msg.requiresTrustedWorkspace": "Shortcut Configurator requires a trusted workspace.",
+  "extension.displayName": "Shortcut Manager",
+  "command.generateShortcut.title": "Shortcut Manager: Generate Shortcut",
+  "msg.requiresTrustedWorkspace": "Shortcut Manager requires a trusted workspace.",
   "msg.selectScriptsPlaceholder": "Select scripts to include as Quick Actions in the shortcut",
   "msg.shortcutGeneratedSuccess": "Workspace shortcut generated successfully!",
   "msg.shortcutGeneratedFailed": "Failed to generate shortcut: {0}",

@@ -1,4 +1,4 @@
-import * as vscode from 'vscode';
+﻿import * as vscode from 'vscode';
 import { generateShortcutCommand } from './commands/generateShortcut';
 import { initLocalization } from './utils/localize';
 
@@ -7,14 +7,14 @@ export function activate(context: vscode.ExtensionContext) {
     
     context.subscriptions.push(
         vscode.workspace.onDidChangeConfiguration(e => {
-            if (e.affectsConfiguration('shortcut-configurator.language')) {
+            if (e.affectsConfiguration('shortcut-manager.language')) {
                 initLocalization(context.extensionPath);
             }
         })
     );
 
-    console.log('Shortcut Configurator Active');
-    let disposable = vscode.commands.registerCommand('shortcut-configurator.generateShortcut', () => {
+    console.log('Shortcut Manager Active');
+    let disposable = vscode.commands.registerCommand('shortcut-manager.generateShortcut', () => {
         generateShortcutCommand(context);
     });
 
@@ -22,3 +22,4 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 export function deactivate() {}
+
