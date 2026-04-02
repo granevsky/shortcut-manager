@@ -1,4 +1,4 @@
-﻿{
+{
   "extension.description": "Create OS-level desktop shortcuts for the current workspace with Quick Actions.",
   "extension.displayName": "Shortcut Manager",
   "command.generateShortcut.title": "Shortcut Manager: Generate Shortcut",
@@ -19,4 +19,3 @@
   "config.language.enum.ru": "Russian",
   "config.packageManager.description": "Overrides the package manager for Quick Actions. If set to 'auto', lockfiles like yarn.lock, pnpm-lock.yaml or bun.lockb will be automatically detected in the script's folder."
 }
-
