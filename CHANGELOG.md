@@ -8,6 +8,10 @@ All notable changes to the **Shortcut Manager** extension will be documented in 
 
 ## 🇺🇸 English
 
+### [1.0.5] - 2026-04-14
+#### Fixed
+- **Linux Environment Variables Loading**: Fixed an issue with Linux Quick Actions where user bash profiles (like `.bashrc`) were ignored, preventing commands from properly resolving system binaries (e.g., `nvm` or `n`). The `.desktop` generator now forces the terminal into interactive shell mode (`bash -i`), ensuring proper `$PATH` inheritance and reliable script execution.
+
 ### [1.0.4] - 2026-04-02
 #### Changed
 - **Project Renamed**: The extension was officially renamed to **Shortcut Manager** (formerly Shortcut Configurator) due to Marketplace naming availability. All configuration keys, commands, and internal references have been fully migrated.
@@ -39,6 +43,10 @@ All notable changes to the **Shortcut Manager** extension will be documented in 
 ---
 
 ## 🇷🇺 Русский
+
+### [1.0.5] - 2026-04-14
+#### Исправлено
+- **Загрузка переменных окружения в Linux**: Устранена проблема выполнения Быстрых действий (Quick Actions) на Linux, при которой дочерний процесс терминала не загружал пользовательский bash-профиль. Это приводило к ошибкам "command not found" (например, при использовании `nvm`). Теперь `.desktop` файл запускает терминал строго в интерактивном режиме (`bash -i`), гарантируя корректную подгрузку `.bashrc` и полный доступ к `$PATH` перед выполнением команд.
 
 ### [1.0.4] - 2026-04-02
 #### Изменено
