@@ -16,7 +16,6 @@ export class LinuxGenerator implements IShortcutGenerator {
         const desktopFilePath = path.join(desktopFilesDir, `vscode-workspace-${safeWorkspaceName}.desktop`);
 
         const escapeBashString = (str: string) => str.replace(/'/g, "'\\''");
-        const escapedWorkspacePath = escapeBashString(options.workspacePath);
 
         let actionsList = '';
         let actionsBlocks = '';
@@ -32,13 +31,13 @@ export class LinuxGenerator implements IShortcutGenerator {
                 const escapedCwd = escapeBashString(action.cwd || options.workspacePath);
 
                 // Creates a smart wrapper that tries to find a terminal and execute the command inside it
-                const execLine = `env SC_CWD='${escapedCwd}' SC_CMD='${action.packageManager} run '\\''${escapedScript}'\\''' bash -i -c "export SC_CWD SC_CMD; for t in x-terminal-emulator gnome-terminal konsole xfce4-terminal mate-terminal lxterminal terminator xterm; do if command -v \\$t >/dev/null 2>&1; then if [ \\"\\$t\\" = \\"gnome-terminal\\" ] || [ \\"\\$t\\" = \\"mate-terminal\\" ]; then exec \\$t -- bash -i -c 'cd \\"\\$SC_CWD\\" && eval \\"\\$SC_CMD\\"; exec bash'; else exec \\$t -e bash -i -c 'cd \\"\\$SC_CWD\\" && eval \\"\\$SC_CMD\\"; exec bash'; fi; fi; done"`;
+                const execLine = `env SC_CWD="${escapedCwd}" SC_CMD="${action.packageManager} run '${escapedScript}'" bash -i -c "export SC_CWD SC_CMD; for t in x-terminal-emulator gnome-terminal konsole xfce4-terminal mate-terminal lxterminal terminator xterm; do if command -v $t >/dev/null 2>&1; then if [ $t = 'gnome-terminal' ] || [ $t = 'mate-terminal' ]; then exec $t -- bash -i -c 'cd $SC_CWD && eval $SC_CMD; exec bash'; else exec $t -e bash -i -c 'cd $SC_CWD && eval $SC_CMD; exec bash'; fi; fi; done"`;
 
                 actionsBlocks += `
 [Desktop Action ${safeActionName}]
 Name=${localize('msg.runScriptLinux', action.name)}
 Exec=${execLine}
-Terminal=false
+Terminal=true
 `;
             }
         }
