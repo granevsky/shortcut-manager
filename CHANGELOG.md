@@ -8,6 +8,10 @@ All notable changes to the **Shortcut Manager** extension will be documented in 
 
 ## 🇺🇸 English
 
+### [1.0.6] - 2026-04-21
+#### Fixed
+- **Linux Quick Actions Terminal Rendering**: Fixed an issue where Linux Quick Actions would incorrectly execute in the background without opening a terminal window. The `.desktop` generator now explicitly sets `Terminal=true` for actions and implements more robust shell string escaping to ensure commands execute safely and reliably within the terminal emulator.
+
 ### [1.0.5] - 2026-04-14
 #### Fixed
 - **Linux Environment Variables Loading**: Fixed an issue with Linux Quick Actions where user bash profiles (like `.bashrc`) were ignored, preventing commands from properly resolving system binaries (e.g., `nvm` or `n`). The `.desktop` generator now forces the terminal into interactive shell mode (`bash -i`), ensuring proper `$PATH` inheritance and reliable script execution.
@@ -43,6 +47,10 @@ All notable changes to the **Shortcut Manager** extension will be documented in 
 ---
 
 ## 🇷🇺 Русский
+
+### [1.0.6] - 2026-04-21
+#### Исправлено
+- **Отображение Терминала для Быстрых действий (Linux)**: Исправлена ошибка, из-за которой Быстрые действия на Linux выполнялись в фоновом режиме без открытия окна терминала. Теперь генератор файлов `.desktop` явно устанавливает флаг `Terminal=true` для дополнительных действий и использует более надежное экранирование строк, что гарантирует безопасное визуальное выполнение команд в эмуляторе терминала.
 
 ### [1.0.5] - 2026-04-14
 #### Исправлено
